@@ -1,0 +1,22 @@
+<h1>Create dog</h1>
+
+<%= form_with scope: :dog, url: dog_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :breed_name %><br>
+    <%= form.text_field :breed_name %>
+  </p>
+ 
+  <p>
+    <%= form.label :size %><br>
+    <%= form.text_field :size %>
+  </p>
+
+  <p>
+    <%= form.label :maint_cost %><br>
+    <%= form.text_field :maint_cost %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
