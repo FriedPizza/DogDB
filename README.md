@@ -27,7 +27,7 @@ $ gem install bundler
 
 ### Installation
 
-Install Dependencies
+Install dependencies
 ```
 $ bundle install
 ```
