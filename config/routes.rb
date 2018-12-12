@@ -4,4 +4,3 @@ Rails.application.routes.draw do
    resources :dog
   root 'welcome#index'
 end
-

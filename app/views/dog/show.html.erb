@@ -1,5 +1,7 @@
+<h1>Show Dog</h1>
+
 <p>
-  <strong>Breed Name:</strong>
+  <strong>Breed name:</strong>
   <%= @dog.breed_name %>
 </p>
  
@@ -12,3 +14,6 @@
   <strong>Maintenance cost:</strong>
   <%= @dog.maint_cost %>
 </p>
+
+<%= link_to 'Edit', edit_dog_path(@dog) %> | 
+<%= link_to 'Back', dog_index_path %>

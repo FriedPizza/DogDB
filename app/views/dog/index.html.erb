@@ -1,4 +1,4 @@
-<h1>Listing dogs</h1>
+<h1>List of Dogs</h1>
 
 <%= link_to 'New dog', new_dog_path %>
 
@@ -8,6 +8,8 @@
     <th>Size</th>
     <th>Maintenance cost</th>
     <th></th>
+    <th></th>
+    <th></th>
   </tr>
  
   <% @dog.each do |dog| %>
@@ -16,6 +18,10 @@
       <td><%= dog.size %></td>
       <td><%= dog.maint_cost %></td>
       <td><%= link_to 'Show', dog_path(dog) %></td>
+      <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
+      <td><%= link_to 'Destroy', dog_path(dog),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
