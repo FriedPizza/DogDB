@@ -27,19 +27,19 @@ $ gem install bundler
 
 ### Installation
 
-Install Dependencies:
+Install Dependencies
 ```
 $ bundle install
 ```
 
-Make sure that sqlite3 is updated:
+Make sure that sqlite3 is updated
 ```
 $ bundle update sqlite3
 ```
 
 ### Running
 
-Migrate the database and set the rails environment to development:
+Migrate the database and set the rails environment to development
 ```
 $ rails db:migrate RAILS_ENV=development
 ```
