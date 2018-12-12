@@ -1,0 +1,17 @@
+<h1>Listing weather</h1>
+
+<%= link_to 'New weather', new_weather_path %>
+<%= link_to 'Home', welcome_index_path %>
+
+<table>
+  <tr>
+    <th>Weather name</th>
+    <th></th>
+  </tr>
+ 
+  <% @weather.each do |weather| %>
+    <tr>
+      <td><%= weather.weather_name %></td>
+      <td><%= link_to 'Show', weather_path(weather) %></td>
+  <% end %>
+</table>

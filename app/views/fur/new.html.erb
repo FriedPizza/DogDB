@@ -1,0 +1,12 @@
+<h1>Create fur</h1>
+
+<%= form_with scope: :fur, url: fur_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :type_name %><br>
+    <%= form.text_field :type_name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

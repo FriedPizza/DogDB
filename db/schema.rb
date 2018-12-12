@@ -10,12 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_11_074920) do
+ActiveRecord::Schema.define(version: 2018_12_12_164624) do
+
+  create_table "characteristics", force: :cascade do |t|
+    t.string "char_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "characters", force: :cascade do |t|
+    t.string "char_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "dogs", force: :cascade do |t|
     t.string "breed_name"
     t.string "size"
     t.string "maint_cost"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "furs", force: :cascade do |t|
+    t.string "type_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string "group_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "issues", force: :cascade do |t|
+    t.string "issue_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "weathers", force: :cascade do |t|
+    t.string "weather_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
