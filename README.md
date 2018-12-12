@@ -44,6 +44,11 @@ Migrate the database and set the rails environment to development
 $ rails db:migrate RAILS_ENV=development
 ```
 
+Seed the database, i.e. populate the database with data
+```
+$ rails db:seed
+```
+
 Initialize the rails server
 ```
 $ rails s
