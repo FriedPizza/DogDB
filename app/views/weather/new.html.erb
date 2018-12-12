@@ -1,0 +1,12 @@
+<h1>Create weather</h1>
+
+<%= form_with scope: :weather, url: weather_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :weather_name %><br>
+    <%= form.text_field :weather_name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

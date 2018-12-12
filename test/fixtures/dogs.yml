@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  breed_name: MyString
+  size: MyString
+  maint_cost: MyString
+
+two:
+  breed_name: MyString
+  size: MyString
+  maint_cost: MyString

@@ -1,0 +1,12 @@
+<h1>Create issue</h1>
+
+<%= form_with scope: :issue, url: issue_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :issue_name %><br>
+    <%= form.text_field :issue_name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,22 @@
+<h1>Listing dogs</h1>
+
+<%= link_to 'New dog', new_dog_path %>
+<%= link_to 'Home', welcome_index_path %>
+
+<table>
+  <tr>
+    <th>Breed name</th>
+    <th>Size</th>
+    <th>Maintenance cost</th>
+    <th></th>
+  </tr>
+ 
+  <% @dog.each do |dog| %>
+    <tr>
+      <td><%= dog.breed_name %></td>
+      <td><%= dog.size %></td>
+      <td><%= dog.maint_cost %></td>
+      <td><%= link_to 'Show', dog_path(dog) %></td>
+    </tr>
+  <% end %>
+</table>
