@@ -1,0 +1,17 @@
+<h1>Listing furs</h1>
+
+<%= link_to 'New fur', new_fur_path %>
+<%= link_to 'Home', welcome_index_path %>
+
+<table>
+  <tr>
+    <th>Type name</th>
+    <th></th>
+  </tr>
+ 
+  <% @fur.each do |fur| %>
+    <tr>
+      <td><%= fur.type_name %></td>
+      <td><%= link_to 'Show', fur_path(fur) %></td>
+  <% end %>
+</table>

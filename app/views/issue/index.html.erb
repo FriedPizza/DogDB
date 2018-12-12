@@ -1,0 +1,17 @@
+<h1>Listing issues</h1>
+
+<%= link_to 'New issue', new_issue_path %>
+<%= link_to 'Home', welcome_index_path %>
+
+<table>
+  <tr>
+    <th>Issue name</th>
+    <th></th>
+  </tr>
+ 
+  <% @issue.each do |issue| %>
+    <tr>
+      <td><%= issue.issue_name %></td>
+      <td><%= link_to 'Show', issue_path(issue) %></td>
+  <% end %>
+</table>

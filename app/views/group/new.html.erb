@@ -1,0 +1,12 @@
+<h1>Create group</h1>
+
+<%= form_with scope: :group, url: group_index_path, local: true do |form| %>
+  <p>
+    <%= form.label :group_name %><br>
+    <%= form.text_field :group_name %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
