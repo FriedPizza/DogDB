@@ -6,7 +6,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* Install Ruby version 2.4.5
+Install Ruby version 2.4.5
 - For windows, download and run the executable file here: https://rubyinstaller.org/downloads/
 
 - For linux, just enter the command:
@@ -14,39 +14,39 @@ These instructions will get you a copy of the project up and running on your loc
 $ sudo apt-get install ruby 2.4.5
 ```
 
-* Install Rails 2.5.1
+Install Rails 2.5.1
 If you have Ruby, just enter the command:
 ```
 $ gem install rails
 ```
 
-* Install Bundler
+Install Bundler
 ```
 $ gem install bundler
 ```
 
 ### Installation
 
-* Install Dependencies:
+Install Dependencies:
 ```
 $ bundle install
 ```
 
-* Make sure that sqlite3 is updated:
+Make sure that sqlite3 is updated:
 ```
 $ bundle update sqlite3
 ```
 
 ### Running
 
-* Migrate the database and set the rails environment to development:
+Migrate the database and set the rails environment to development:
 ```
 $ rails db:migrate RAILS_ENV=development
 ```
 
-* Initialize the rails server
+Initialize the rails server
 ```
 $ rails s
 ```
 
-* Enter "localhost:3000" in the URL of your browser
+Enter "localhost:3000" in the URL of your browser
