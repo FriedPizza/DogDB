@@ -1,4 +1,9 @@
+<h1>Showing Weather</h1>
+
 <p>
   <strong>Weather Name:</strong>
   <%= @weather.weather_name %>
 </p>
+
+<%= link_to 'Edit', edit_weather_path(@weather) %> | 
+<%= link_to 'Back', weather_index_path %>

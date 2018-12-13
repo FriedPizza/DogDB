@@ -1,7 +1,7 @@
-<h1>Create Fur</h1>
-
-<%= form_with scope: :fur, url: fur_index_path, local: true do |form| %>
-
+<h1>Edit Fur</h1>
+ 
+<%= form_with(model: @fur, local: true) do |form| %>
+ 
   <% if @fur.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -15,15 +15,15 @@
       </ul>
     </div>
   <% end %>
-
+ 
   <p>
     <%= form.label :type_name %><br>
     <%= form.text_field :type_name %>
   </p>
- 
+
   <p>
     <%= form.submit %>
   </p>
 <% end %>
-
+ 
 <%= link_to 'Back', fur_index_path %>

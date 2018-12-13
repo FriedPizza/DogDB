@@ -1,7 +1,7 @@
-<h1>Create Issue</h1>
-
-<%= form_with scope: :issue, url: issue_index_path, local: true do |form| %>
-  
+<h1>Edit Issue</h1>
+ 
+<%= form_with(model: @issue, local: true) do |form| %>
+ 
   <% if @issue.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -15,15 +15,15 @@
       </ul>
     </div>
   <% end %>
-
+ 
   <p>
     <%= form.label :issue_name %><br>
     <%= form.text_field :issue_name %>
   </p>
- 
+
   <p>
     <%= form.submit %>
   </p>
 <% end %>
-
+ 
 <%= link_to 'Back', issue_index_path %>

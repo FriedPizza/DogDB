@@ -1,4 +1,4 @@
-<h1>Listing furs</h1>
+<h1>Listing Furs</h1>
 
 <%= link_to 'New fur', new_fur_path %>
 <%= link_to 'Home', welcome_index_path %>
@@ -13,5 +13,9 @@
     <tr>
       <td><%= fur.type_name %></td>
       <td><%= link_to 'Show', fur_path(fur) %></td>
+      <td><%= link_to 'Edit', edit_fur_path(fur) %></td>
+      <td><%= link_to 'Destroy', fur_path(fur),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
   <% end %>
 </table>

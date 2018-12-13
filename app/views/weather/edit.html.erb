@@ -1,7 +1,7 @@
-<h1>Create Weather</h1>
-
-<%= form_with scope: :weather, url: weather_index_path, local: true do |form| %>
-
+<h1>Edit Weather</h1>
+ 
+<%= form_with(model: @weather, local: true) do |form| %>
+ 
   <% if @weather.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -15,15 +15,15 @@
       </ul>
     </div>
   <% end %>
-
+ 
   <p>
     <%= form.label :weather_name %><br>
     <%= form.text_field :weather_name %>
   </p>
- 
+
   <p>
     <%= form.submit %>
   </p>
 <% end %>
-
+ 
 <%= link_to 'Back', weather_index_path %>

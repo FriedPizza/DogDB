@@ -4,10 +4,7 @@ class CreateDogs < ActiveRecord::Migration[5.2]
       t.string :breed_name
       t.string :size
       t.string :maint_cost
-
       t.timestamps
     end
-
-
   end
 end
