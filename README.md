@@ -14,7 +14,7 @@ Install Ruby version 2.4.5
 $ sudo apt-get install ruby 2.4.5
 ```
 
-Install Rails 2.5.1
+Install Rails 5.2.1
 If you have Ruby, just enter the command:
 ```
 $ gem install rails
