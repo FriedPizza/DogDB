@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2018_12_12_164624) do
 
-  create_table "characteristics", force: :cascade do |t|
-    t.string "char_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "characters", force: :cascade do |t|
     t.string "char_name"
     t.datetime "created_at", null: false

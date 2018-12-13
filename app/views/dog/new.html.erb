@@ -6,7 +6,7 @@
     <div id="error_explanation">
       <h2>
         <%= pluralize(@dog.errors.count, "error") %> prohibited
-        this dog from being saved:
+        this dog entry from being saved:
       </h2>
       <ul>
         <% @dog.errors.full_messages.each do |msg| %>

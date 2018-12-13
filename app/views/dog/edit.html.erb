@@ -6,7 +6,7 @@
     <div id="error_explanation">
       <h2>
         <%= pluralize(@dog.errors.count, "error") %> prohibited
-        this article from being saved:
+        this dog entry from being saved:
       </h2>
       <ul>
         <% @dog.errors.full_messages.each do |msg| %>
@@ -34,7 +34,6 @@
   <p>
     <%= form.submit %>
   </p>
- 
 <% end %>
  
 <%= link_to 'Back', dog_index_path %>

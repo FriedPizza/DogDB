@@ -1,4 +1,4 @@
-<h1>Listing groups</h1>
+<h1>Listing Groups</h1>
 
 <%= link_to 'New group', new_group_path %>
 <%= link_to 'Home', welcome_index_path %>
@@ -13,5 +13,9 @@
     <tr>
       <td><%= group.group_name %></td>
       <td><%= link_to 'Show', group_path(group) %></td>
+      <td><%= link_to 'Edit', edit_group_path(group) %></td>
+      <td><%= link_to 'Destroy', group_path(group),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
   <% end %>
 </table>
